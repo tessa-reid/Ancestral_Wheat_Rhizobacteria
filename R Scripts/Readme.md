@@ -19,7 +19,7 @@ The corresponding data required for the analysis can be found on my page in the 
 
 ## License
 
-This code is licensed under the [Apache-2.0 License](LICENSE).
+This code is licensed under the [Apache-2.0 License](https://github.com/tessa-reid/Ancestral_Wheat_Rhizobacteria/blob/main/LICENSE).
 
 ## Issues
 
