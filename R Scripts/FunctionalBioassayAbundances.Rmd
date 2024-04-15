@@ -1,0 +1,277 @@
+---
+title: "Statistical analysis of functional bioassay data"
+author: "Tessa E. Reid"
+date: "2023-01-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+  
+#### Install packages
+```{r, eval=FALSE}
+install.packages("predictmeans")
+```
+  
+#### Load packages
+```{r, message=FALSE, warning=FALSE}
+library(predictmeans) #for pairwise comparisons
+```
+
+
+#### Import data
+
+The data generated from the functional bioassays is binomial: there are two outcomes, positive or negative. The data includes number of positive isolates out of 94. The data is imported as raw counts and proportions.
+
+```{r}
+data = read.csv("functional_bioassay_abundance.csv")
+str(data)
+```
+
+Here, I have my data organised by: count of positive isolates, proportion of positive isolates. Each row is one sample and metadata is also included. Also included in this file but not in the below analysis are the colony counts per TSA plate and the absolute abundances of bacteria and nutrient solulbizers.
+
+
+#### Define factors
+
+Here, I want to define the factors I am most interested in including in the analysis and I want to order them in the way I them to look on the plots.
+  
+```{r}
+data$Fertilization = factor(data$Fertilization, levels = c("Non-fertilized", "Fertilized"))
+data$Genome = factor(data$Genome, levels = c("Unplanted", "AA", "BB","DD" ,"AABB","AABBDD"))
+
+```
+  
+
+
+#### Binomial Generalised Linear Model
+  
+A binomial generalized linear model (GLM) is a type of GLM used to model the relationship between a binary response variable and one or more predictor variables. A binary response variable is a variable that can take on only two values, such as "success" or "failure".
+
+A binomial GLM uses the logit function to model the probability of the "success" outcome as a linear combination of the predictor variables. The logit function is the logarithm of the odds of the "success" outcome, which is defined as the probability of success divided by the probability of failure. The coefficients in the model can be interpreted as the change in the log-odds of the response variable for a one-unit change in the predictor variable, holding all other predictor variables constant.
+
+A binomial GLM can be fitted using the glm() function in R, specifying the family argument as "binomial". The model assumes that the observations are independent of each other. It is important to note that the data should not be overdispersed, if it is, a negative binomial GLM should be used instead.
+
+```{r}
+binomial.model <- glm(Total_nutrient_solubilizers_proportion ~ Genome * Fertilization, data, family = quasibinomial(link = "logit"))
+
+summary(binomial.model)
+```
+
+
+Here, I am testing whether Genome (predictor variable 1) and Fertilization (predictor variable 2) and their interaction (*) influence the proportion of total nutrient solubilizers (Response variable) in my samples. 
+
+Here, we put the family as quasibinomial instead of just binomnial as the output gives the dispersion parameter. This is important to assess whether the data is under or overdispersed. 
+
+If the dispersion parameter is 1 or near to 1 then your data is evenely dispersed and family should be set to binomial. If the dispersion parameter is close to 0 or greater than 2 then your data is either under or over dispersed, respectively, and family should be set to quasiposson which corrects for over/under dispersed data by using a negative binomial GLM. 
+
+I have a dispersion paramter of 0.2952534 therefore my data is underdispersed so I have used the correct model (quasibinomial).
+
+The output from this model in terms of significance is not actually that useful. 
+The intercept is testing whether your first item (in this case, non-fertilized bulk soil) is greater than 0 and then the subsequent rows test whether each factor is significantly different to the intercept.
+
+To investigate our data further we can use the anova function to perform an Analysis of Deviance test.
+
+
+#### Analysis of Deviance
+
+```{r}
+anova(binomial.model, test = "Chisq")
+```
+
+From the output, we can see that averages across genome levels are significantly different and averages across fertilization are significantly different. There is no significant interaction which means the average of nutrient solubilizers across genome level do not change because of fertililization. 
+
+We can go a step further and analyse pairwise interactions using the predictmeans functions.
+
+```{r, fig.show='asis'}
+pairwise <- predictmeans(binomial.model, "Genome:Fertilization", pairwise = TRUE)
+```
+
+Here, three plots are automatically produced.
+
+In a quasibinomial generalized linear model, the predicted mean refers to the expected value of the response variable, given a set of predictor variables. The predicted mean is obtained by transforming the linear combination of the predictors and the coefficients estimated by the model through a link function. The link function maps the linear predictor to the mean of the response distribution.
+
+For example, in a quasibinomial regression model with a log link function, the predicted mean would be the log odds of the response, and the predicted probabilities can be obtained by exponentiating the predicted log odds. The predicted mean provides an estimate of the expected value of the response for each combination of predictor values.
+
+In a quasibinomial generalized linear model, the predicted mean is used to make predictions about the response for new data, to estimate the effect of the predictor variables on the response, and to assess the goodness of fit of the model. However, the predicted mean is in the scale of the response variable and may not be directly interpretable, depending on the choice of link function. In such cases, a back-transformed mean may be more interpretable.
+
+A back-transformed mean is the predicted mean response transformed back to the original response scale, usually through an inverse link function. This gives a more interpretable measure of the mean response in terms of the original response units. For example, in a quasibinomial regression model with a log link function, the back-transformed mean would be the exponentiated value of the predicted log odds, providing an estimate of the predicted probability of the response. 
+
+The predicted means plot can be useful to visualise the results of the pairwise comparisons.
+
+```{r, echo=FALSE}
+print(pairwise$predictmeansPlot)
+```
+
+To more easily look at the significance groupings and either export the data or use later for plotting, we can display the full results.
+```{r}
+pairwise
+```
+
+
+#### Residual plots
+
+Checking residual plots in a binomial generalized linear model is important because it allows you to assess the validity of the assumptions underlying the model, such as the linearity, normality, and homoscedasticity of the residuals. Deviations from these assumptions can affect the accuracy and interpretibility of the model, leading to biased and inefficient parameter estimates, and incorrect inference. By visually examining residual plots, you can identify and diagnose problems with your model and make necessary adjustments, such as transforming variables or using different model specifications.
+
+```{r}
+print(residplot(binomial.model, level=1))
+```
+n.b. plot does show in final file. WHY.
+
+In a binomial generalized linear model, residuals are defined as the difference between the observed response values and the fitted values from the model. The residual plots show the distribution of the residuals and can help you assess the following assumptions:
+
+1. Linearity: The residuals should be randomly distributed around zero, indicating that there is no systematic relationship between the predictors and the response. If there is a pattern in the residual plot, this suggests that a linear model may not be appropriate and a non-linear model or a different functional form may be needed.
+2. Normality: The residuals should be approximately normally distributed with a mean of zero. If the residual plot shows a non-normal distribution, this may indicate the need for a transformation of the response or predictors, or for a different model specification.
+3. Homoscedasticity: The residuals should have constant variance across the range of the predictors. If the residual plot shows increasing or decreasing variance, this suggests that the model may not be well-specified, and weighting or using a different distribution family may be necessary.
+
+It's also important to check for outliers in the residual plots, which may indicate influential or poorly fit observations.
+
+
+
+Now we know how to perform the stats and produce plots, we can do the same for the rest of our data.
+
+
+#### Binomial models:
+
+First, I will create a binomial model for each functional assay and save them as objects:
+```{r}
+binomial.model.N <- glm(N_solubilizers_proportion ~ Genome * Fertilization, data, family = quasibinomial(link = "logit"))
+binomial.model.P <- glm(P_solubilizers_proportion ~ Genome * Fertilization, data, family = quasibinomial(link = "logit"))
+binomial.model.K <- glm(K_solubilizers_proportion ~ Genome * Fertilization, data, family = quasibinomial(link = "logit"))
+binomial.model.Fe <- glm(Fe_solubilizers_proportion ~ Genome * Fertilization, data, family = quasibinomial(link = "logit"))
+binomial.model.Zn <- glm(Zn_solubilizers_proportion ~ Genome * Fertilization, data, family = quasibinomial(link = "logit"))
+```
+
+
+#### Output from binomial models:
+Then I will check the dispersion parameter for each assay to check for over- or under- dispersion:
+```{r}
+summary(binomial.model.N)
+```
+
+UNDERDISPERSED - KEEP QUASI MODEL
+
+```{r}
+summary(binomial.model.P)
+```
+
+UNDERDISPERSED - KEEP QUASI MODEL
+
+```{r}
+summary(binomial.model.K)
+```
+
+UNDERDISPERSED - KEEP QUASI MODEL
+
+```{r}
+summary(binomial.model.Fe)
+```
+
+UNDERDISPERSED - KEEP QUASI MODEL
+
+```{r}
+summary(binomial.model.Zn)
+```
+
+UNDERDISPERSED - KEEP QUASI MODEL
+
+
+#### Residual plots
+
+```{r}
+print(residplot(binomial.model.N, level=1))
+print(residplot(binomial.model.P, level=1))
+print(residplot(binomial.model.K, level=1))
+print(residplot(binomial.model.Fe, level=1))
+print(residplot(binomial.model.Zn, level=1))
+```
+n.b. plots do not show in final file. WHY.
+
+
+#### ANOVA tests
+
+All my data is underdispersed so I can move on to perform analysis of deviance for each model
+```{r}
+anova(binomial.model.N, test = "Chisq")
+anova(binomial.model.P, test = "Chisq")
+anova(binomial.model.K, test = "Chisq")
+anova(binomial.model.Fe, test = "Chisq")
+anova(binomial.model.Zn, test = "Chisq")
+```
+
+The data from the anova can be used when writing up your results.
+
+
+##### Look at pairwise interactions
+```{r}
+pairwise.N <- predictmeans(binomial.model.N, "Genome:Fertilization", pairwise = TRUE)
+pairwise.P <- predictmeans(binomial.model.P, "Genome:Fertilization", pairwise = TRUE)
+pairwise.K <- predictmeans(binomial.model.K, "Genome:Fertilization", pairwise = TRUE)
+pairwise.Fe <- predictmeans(binomial.model.Fe, "Genome:Fertilization", pairwise = TRUE)
+pairwise.Zn <- predictmeans(binomial.model.Zn, "Genome:Fertilization", pairwise = TRUE)
+```
+
+
+```{r}
+print(pairwise.N$predictmeansPlot)
+print(pairwise.P$predictmeansPlot)
+print(pairwise.K$predictmeansPlot)
+print(pairwise.Fe$predictmeansPlot)
+print(pairwise.Zn$predictmeansPlot)
+
+pairwise.N
+pairwise.P
+pairwise.K
+pairwise.Fe
+pairwise.Zn
+```
+
+
+Here, the plots for iron and zinc look a bit strange. This is likely because there is at least one category that has all zeros as the proportion. We check the residuals:
+```{r}
+residplot(binomial.model.Fe, level=1)
+```
+
+```{r}
+residplot(binomial.model.Zn, level=1)
+```
+
+and we can see that the residuals are skewed and not evenly distributed. The best way to proceed here is to remove the category that is causing the problem.
+
+```{r}
+#Subset the data to rhizoplane samples only
+data.rp <- subset(data, Soil == "Rhizoplane")
+
+#Perform binomial tests
+binomial.model.Fe.rp <- glm(Fe_solubilizers_proportion ~ Genome * Fertilization, data.rp, family = quasibinomial(link = "logit"))
+binomial.model.Zn.rp <- glm(Zn_solubilizers_proportion ~ Genome * Fertilization, data.rp, family = quasibinomial(link = "logit"))
+
+summary(binomial.model.Fe.rp)
+summary(binomial.model.Zn.rp)
+
+
+#Check residual plots
+residplot(binomial.model.Fe.rp, level=1)
+residplot(binomial.model.Zn.rp, level=1)
+
+
+#Analysis of deviance
+anova(binomial.model.Fe.rp, test = "Chisq")
+anova(binomial.model.Zn.rp, test = "Chisq")
+
+
+#Pairwise analysis
+pairwise.Fe.rp <- predictmeans(binomial.model.Fe.rp, "Genome:Fertilization", pairwise = TRUE)
+pairwise.Zn.rp <- predictmeans(binomial.model.Zn.rp, "Genome:Fertilization", pairwise = TRUE)
+
+```
+
+```{r}
+print(pairwise.Fe.rp$predictmeansPlot)
+print(pairwise.Zn.rp$predictmeansPlot)
+
+pairwise.Fe.rp
+pairwise.Zn.rp
+```
+
+Continued in Prism: Figure4.prism
