@@ -1,0 +1,303 @@
+sample-id	Plant	Wheat variety	Treatment	Block	Plot	Compartment	Plant height (cm)	Plant_biomass_(g)
+ASpeltoides-T-RP-2-5	ASpeltoides	Grass	Treated	2	5	Rhizoplane	75	1.95
+ASpeltoides-T-RP-3-25	ASpeltoides	Grass	Treated	3	25	Rhizoplane	69	3.48
+ASpeltoides-UnT-RP-1-18	ASpeltoides	Grass	UnTreated	1	18	Rhizoplane	100	0.54
+ASpeltoides-UnT-RP-2-1	ASpeltoides	Grass	UnTreated	2	1	Rhizoplane	92	0.34
+ASpeltoides-UnT-RP-3-6	ASpeltoides	Grass	UnTreated	3	6	Rhizoplane	89	0.48
+ATauschii-T-RP-1-21	ATauschii	Grass	Treated	1	21	Rhizoplane	47.5	1.96
+ATauschii-T-RP-2-40	ATauschii	Grass	Treated	2	40	Rhizoplane	48	1.36
+ATauschii-T-RP-3-17	ATauschii	Grass	Treated	3	17	Rhizoplane	49.5	3.05
+ATauschii-T-RP-4-37	ATauschii	Grass	Treated	4	37	Rhizoplane	37	0.99
+ATauschii-UnT-RP-1-27	ATauschii	Grass	UnTreated	1	27	Rhizoplane	41	0.27
+ATauschii-UnT-RP-2-2	ATauschii	Grass	UnTreated	2	2	Rhizoplane	46.5	0.38
+ATauschii-UnT-RP-3-14	ATauschii	Grass	UnTreated	3	14	Rhizoplane	28	0.42
+ATauschii-UnT-RP-4-30	ATauschii	Grass	UnTreated	4	30	Rhizoplane	42.5	0.34
+Avalon-T-RP-1-9	Avalon	Heritage	Treated	1	9	Rhizoplane	22.5	1.9
+Avalon-T-RP-2-17	Avalon	Heritage	Treated	2	17	Rhizoplane	37.5	2.06
+Avalon-T-RP-3-36	Avalon	Heritage	Treated	3	36	Rhizoplane	32	0.98
+Avalon-T-RP-4-40	Avalon	Heritage	Treated	4	40	Rhizoplane	1.98	1.98
+Avalon-UnT-RP-1-6	Avalon	Heritage	UnTreated	1	6	Rhizoplane	31	0.89
+Avalon-UnT-RP-2-36	Avalon	Heritage	UnTreated	2	36	Rhizoplane	39.5	0.63
+Avalon-UnT-RP-3-39	Avalon	Heritage	UnTreated	3	39	Rhizoplane	36	0.55
+Avalon-UnT-RP-4-34	Avalon	Heritage	UnTreated	4	34	Rhizoplane	38.5	
+Cadenza-T-RP-1-2	Cadenza	Heritage	Treated	1	2	Rhizoplane	42	1.07
+Cadenza-T-RP-2-6	Cadenza	Heritage	Treated	2	6	Rhizoplane	51.5	1.28
+Cadenza-T-RP-3-7	Cadenza	Heritage	Treated	3	7	Rhizoplane	59	0.85
+Cadenza-T-RP-4-11	Cadenza	Heritage	Treated	4	11	Rhizoplane	49.5	0.98
+Cadenza-UnT-RP-1-24	Cadenza	Heritage	UnTreated	1	24	Rhizoplane	54	0.174
+Cadenza-UnT-RP-2-20	Cadenza	Heritage	UnTreated	2	20	Rhizoplane	40.5	0.33
+Cadenza-UnT-RP-3-27	Cadenza	Heritage	UnTreated	3	27	Rhizoplane	50	0.38
+Cadenza-UnT-RP-4-15	Cadenza	Heritage	UnTreated	4	15	Rhizoplane	44	0.37
+Chidham-T-RP-1-36	Chidham	Heritage	Treated	1	36	Rhizoplane	54	2.74
+Chidham-T-RP-2-38	Chidham	Heritage	Treated	2	38	Rhizoplane	75	2.87
+Chidham-T-RP-3-22	Chidham	Heritage	Treated	3	22	Rhizoplane	80	3.19
+Chidham-T-RP-4-22	Chidham	Heritage	Treated	4	22	Rhizoplane	60.5	3.12
+Chidham-UnT-RP-1-22	Chidham	Heritage	UnTreated	1	22	Rhizoplane	49.5	0.53
+Chidham-UnT-RP-2-22	Chidham	Heritage	UnTreated	2	22	Rhizoplane	67.5	0.58
+Chidham-UnT-RP-3-33	Chidham	Heritage	UnTreated	3	33	Rhizoplane	50	1.25
+Crusoe-T-RP-1-1	Crusoe	Heritage	Treated	1	1	Rhizoplane	40.5	2.15
+Crusoe-T-RP-2-12	Crusoe	Heritage	Treated	2	12	Rhizoplane	47	3.18
+Crusoe-T-RP-3-30	Crusoe	Heritage	Treated	3	30	Rhizoplane	43	2.12
+Crusoe-T-RP-4-16	Crusoe	Heritage	Treated	4	16	Rhizoplane	15.5	3.56
+Crusoe-UnT-RP-1-20	Crusoe	Heritage	UnTreated	1	20	Rhizoplane	34	0.46
+Crusoe-UnT-RP-2-29	Crusoe	Heritage	UnTreated	2	29	Rhizoplane	40	0.75
+Crusoe-UnT-RP-3-15	Crusoe	Heritage	UnTreated	3	15	Rhizoplane	35.5	0.91
+Crusoe-UnT-RP-4-24	Crusoe	Heritage	UnTreated	4	24	Rhizoplane	45.5	0.57
+Gallant-T-RP-1-17	Gallant	Heritage	Treated	1	17	Rhizoplane	40	2.92
+Gallant-T-RP-2-23	Gallant	Heritage	Treated	2	23	Rhizoplane	43	1.98
+Gallant-T-RP-3-1	Gallant	Heritage	Treated	3	1	Rhizoplane	39.5	
+Gallant-T-RP-4-23	Gallant	Heritage	Treated	4	23	Rhizoplane	43	1.26
+Gallant-UnT-RP-1-38	Gallant	Heritage	UnTreated	1	38	Rhizoplane	37.5	0.44
+Gallant-UnT-RP-2-7	Gallant	Heritage	UnTreated	2	7	Rhizoplane	43.5	0.43
+Gallant-UnT-RP-3-18	Gallant	Heritage	UnTreated	3	18	Rhizoplane	39	0.39
+Gallant-UnT-RP-4-17	Gallant	Heritage	UnTreated	4	17	Rhizoplane	42	0.46
+Hereward-T-RP-1-5	Hereward	Heritage	Treated	1	5	Rhizoplane	37	2.54
+Hereward-T-RP-2-32	Hereward	Heritage	Treated	2	32	Rhizoplane	53	3.03
+Hereward-T-RP-3-9	Hereward	Heritage	Treated	3	9	Rhizoplane	39	3.18
+Hereward-T-RP-4-32	Hereward	Heritage	Treated	4	32	Rhizoplane	62	1.27
+Hereward-UnT-RP-1-7	Hereward	Heritage	UnTreated	1	7	Rhizoplane	39.5	0.5
+Hereward-UnT-RP-2-30	Hereward	Heritage	UnTreated	2	30	Rhizoplane	42.5	0.53
+Hereward-UnT-RP-3-19	Hereward	Heritage	UnTreated	3	19	Rhizoplane	40	0.56
+Malacca-T-RP-1-12	Malacca	Heritage	Treated	1	12	Rhizoplane	35.5	2.06
+Malacca-T-RP-2-3	Malacca	Heritage	Treated	2	3	Rhizoplane	26	0.56
+Malacca-T-RP-3-37	Malacca	Heritage	Treated	3	37	Rhizoplane	43	1.4
+Malacca-T-RP-4-26	Malacca	Heritage	Treated	4	26	Rhizoplane	35.5	2.37
+Malacca-UnT-RP-1-29	Malacca	Heritage	UnTreated	1	29	Rhizoplane	38	0.57
+Malacca-UnT-RP-2-24	Malacca	Heritage	UnTreated	2	24	Rhizoplane	44.5	0.51
+Malacca-UnT-RP-3-32	Malacca	Heritage	UnTreated	3	32	Rhizoplane	38	0.48
+RL-T-RP-1-35	Red Llammas	Heritage	Treated	1	35	Rhizoplane	60	2.64
+RL-T-RP-2-21	Red Llammas	Heritage	Treated	2	21	Rhizoplane	70	2.4
+RL-T-RP-3-24	Red Llammas	Heritage	Treated	3	24	Rhizoplane	67	3.18
+RL-T-RP-4-19	Red Llammas	Heritage	Treated	4	19	Rhizoplane	71.5	2.9
+RL-UnT-RP-1-40	Red Llammas	Heritage	UnTreated	1	40	Rhizoplane	44	0.65
+RL-UnT-RP-2-35	Red Llammas	Heritage	UnTreated	2	35	Rhizoplane	67	1.18
+RL-UnT-RP-3-12	Red Llammas	Heritage	UnTreated	3	12	Rhizoplane	69	0.77
+RL-UnT-RP-4-6	Red Llammas	Heritage	UnTreated	4	6	Rhizoplane	56.5	0.5
+T-carthilicum-T-RP-1-8	Triticum_carthilicum	Ancestral	Treated	1	8	Rhizoplane	53	0.39
+T-carthilicum-T-RP-2-19	Triticum_carthilicum	Ancestral	Treated	2	19	Rhizoplane	45	0.85
+T-carthilicum-T-RP-3-11	Triticum_carthilicum	Ancestral	Treated	3	11	Rhizoplane	58	1.4
+T-carthilicum-T-RP-4-9	Triticum_carthilicum	Ancestral	Treated	4	9	Rhizoplane	54.2	0.87
+T-carthilicum-UnT-RP-1-37	Triticum_carthilicum	Ancestral	UnTreated	1	37	Rhizoplane	50	0.36
+T-carthilicum-UnT-RP-2-16	Triticum_carthilicum	Ancestral	UnTreated	2	16	Rhizoplane	53.5	0.3
+T-carthilicum-UnT-RP-3-16	Triticum_carthilicum	Ancestral	UnTreated	3	16	Rhizoplane	52.5	0.44
+T-carthilicum-UnT-RP-4-25	Triticum_carthilicum	Ancestral	UnTreated	4	25	Rhizoplane	53	0.57
+T-dicoccoides-T-RP-1-14	Triticum_dicoccoides	Ancestral	Treated	1	14	Rhizoplane	77.8	0.175
+T-dicoccoides-T-RP-2-34	Triticum_dicoccoides	Ancestral	Treated	2	34	Rhizoplane	69.5	1.33
+T-dicoccoides-T-RP-3-8	Triticum_dicoccoides	Ancestral	Treated	3	8	Rhizoplane	65.5	1.25
+T-dicoccoides-T-RP-4-29	Triticum_dicoccoides	Ancestral	Treated	4	29	Rhizoplane	58.5	1.11
+T-dicoccoides-UnT-RP-1-26	Triticum_dicoccoides	Ancestral	UnTreated	1	26	Rhizoplane	68	0.47
+T-dicoccoides-UnT-RP-2-15	Triticum_dicoccoides	Ancestral	UnTreated	2	15	Rhizoplane	69.8	0.47
+T-dicoccoides-UnT-RP-3-4	Triticum_dicoccoides	Ancestral	UnTreated	3	4	Rhizoplane	66.5	0.54
+T-dicoccoides-UnT-RP-4-2	Triticum_dicoccoides	Ancestral	UnTreated	4	2	Rhizoplane	59.5	
+T-macha-T-RP-1-39	Triticum_macha	Ancestral	Treated	1	39	Rhizoplane	72	3.04
+T-macha-T-RP-2-14	Triticum_macha	Ancestral	Treated	2	14	Rhizoplane	77	1.15
+T-macha-T-RP-3-34	Triticum_macha	Ancestral	Treated	3	34	Rhizoplane	55.5	1.69
+T-macha-T-RP-4-18	Triticum_macha	Ancestral	Treated	4	18	Rhizoplane	70.5	2.03
+T-macha-UnT-RP-1-19	Triticum_macha	Ancestral	UnTreated	1	19	Rhizoplane	55	0.49
+T-macha-UnT-RP-2-11	Triticum_macha	Ancestral	UnTreated	2	11	Rhizoplane	66	0.53
+T-macha-UnT-RP-3-29	Triticum_macha	Ancestral	UnTreated	3	29	Rhizoplane	79	0.73
+T-macha-UnT-RP-4-14	Triticum_macha	Ancestral	UnTreated	4	14	Rhizoplane	72	0.59
+T-monococcum-T-RP-1-10	Triticum_monococcum	Ancestral	Treated	1	10	Rhizoplane	83	1.11
+T-monococcum-T-RP-2-37	Triticum_monococcum	Ancestral	Treated	2	37	Rhizoplane	35	0.3
+T-monococcum-T-RP-3-13	Triticum_monococcum	Ancestral	Treated	3	13	Rhizoplane	89.5	1.09
+T-monococcum-T-RP-4-7	Triticum_monococcum	Ancestral	Treated	4	7	Rhizoplane	70	0.47
+T-monococcum-UnT-RP-1-23	Triticum_monococcum	Ancestral	UnTreated	1	23	Rhizoplane	24.5	0.54
+T-monococcum-UnT-RP-2-25	Triticum_monococcum	Ancestral	UnTreated	2	25	Rhizoplane	48	0.33
+T-monococcum-UnT-RP-3-23	Triticum_monococcum	Ancestral	UnTreated	3	23	Rhizoplane	75.5	0.52
+T-monococcum-UnT-RP-4-28	Triticum_monococcum	Ancestral	UnTreated	4	28	Rhizoplane	73	0.3
+T-polonicum-T-RP-1-11	Triticum_polonicum	Ancestral	Treated	1	11	Rhizoplane	90	2.37
+T-polonicum-T-RP-2-26	Triticum_polonicum	Ancestral	Treated	2	26	Rhizoplane	96	3.8
+T-polonicum-T-RP-3-20	Triticum_polonicum	Ancestral	Treated	3	20	Rhizoplane	90	2.98
+T-polonicum-T-RP-4-5	Triticum_polonicum	Ancestral	Treated	4	5	Rhizoplane	97	3.48
+T-polonicum-UnT-RP-1-30	Triticum_polonicum	Ancestral	UnTreated	1	30	Rhizoplane	82	0.63
+T-polonicum-UnT-RP-2-13	Triticum_polonicum	Ancestral	UnTreated	2	13	Rhizoplane	78.5	0.58
+T-polonicum-UnT-RP-3-3	Triticum_polonicum	Ancestral	UnTreated	3	3	Rhizoplane	84	0.72
+T-polonicum-UnT-RP-4-12	Triticum_polonicum	Ancestral	UnTreated	4	12	Rhizoplane	78	0.49
+T-spelta-T-RP-1-4	Triticum_spelta	Ancestral	Treated	1	4	Rhizoplane	79	1.49
+T-spelta-T-RP-2-39	Triticum_spelta	Ancestral	Treated	2	39	Rhizoplane	80	1.75
+T-spelta-T-RP-3-28	Triticum_spelta	Ancestral	Treated	3	28	Rhizoplane	74.5	1.39
+T-spelta-T-RP-4-36	Triticum_spelta	Ancestral	Treated	4	36	Rhizoplane	73	1.29
+T-spelta-UnT-RP-1-32	Triticum_spelta	Ancestral	UnTreated	1	32	Rhizoplane	67	0.51
+T-spelta-UnT-RP-2-27	Triticum_spelta	Ancestral	UnTreated	2	27	Rhizoplane	68.5	0.63
+T-spelta-UnT-RP-3-38	Triticum_spelta	Ancestral	UnTreated	3	38	Rhizoplane	69	0.98
+T-spelta-UnT-RP-4-10	Triticum_spelta	Ancestral	UnTreated	4	10	Rhizoplane	59.6	0.52
+T-uranicum-T-RP-1-31	Triticum_uranicum	Ancestral	Treated	1	31	Rhizoplane	85.2	2.14
+T-uranicum-T-RP-2-31	Triticum_uranicum	Ancestral	Treated	2	31	Rhizoplane	94	1.87
+T-uranicum-T-RP-3-10	Triticum_uranicum	Ancestral	Treated	3	10	Rhizoplane	97	1.08
+T-uranicum-T-RP-4-13	Triticum_uranicum	Ancestral	Treated	4	13	Rhizoplane	93	1.93
+T-uranicum-UnT-RP-1-3	Triticum_uranicum	Ancestral	UnTreated	1	3	Rhizoplane	59	0.59
+T-uranicum-UnT-RP-2-28	Triticum_uranicum	Ancestral	UnTreated	2	28	Rhizoplane	67	0.54
+T-uranicum-UnT-RP-3-21	Triticum_uranicum	Ancestral	UnTreated	3	21	Rhizoplane	76	0.54
+T-uranicum-UnT-RP-4-27	Triticum_uranicum	Ancestral	UnTreated	4	27	Rhizoplane	70	0.6
+T-uratu-T-RP-2-8	Triticum_uratu	Ancestral	Treated	2	8	Rhizoplane	33	1.14
+T-uratu-T-RP-3-26	Triticum_uratu	Ancestral	Treated	3	26	Rhizoplane	40	1.4
+T-uratu-T-RP-4-35	Triticum_uratu	Ancestral	Treated	4	35	Rhizoplane	30	1.02
+T-uratu-UnT-RP-1-25	Triticum_uratu	Ancestral	UnTreated	1	25	Rhizoplane	34.5	0.69
+T-uratu-UnT-RP-2-10	Triticum_uratu	Ancestral	UnTreated	2	10	Rhizoplane	49.5	0.39
+T-uratu-UnT-RP-3-31	Triticum_uratu	Ancestral	UnTreated	3	31	Rhizoplane	43.5	0.39
+T-uratu-UnT-RP-4-38	Triticum_uratu	Ancestral	UnTreated	4	38	Rhizoplane	55.5	
+Victor-T-RP-1-13	Victor	Heritage	Treated	1	13	Rhizoplane	56.5	2.58
+Victor-T-RP-2-18	Victor	Heritage	Treated	2	18	Rhizoplane	55	2.12
+Victor-T-RP-3-5	Victor	Heritage	Treated	3	5	Rhizoplane	53	3.82
+Victor-T-RP-4-8	Victor	Heritage	Treated	4	8	Rhizoplane	43	3.08
+Victor-UnT-RP-1-34	Victor	Heritage	UnTreated	1	34	Rhizoplane	49.5	0.58
+Victor-UnT-RP-2-9	Victor	Heritage	UnTreated	2	9	Rhizoplane	74	1.36
+Victor-UnT-RP-3-2	Victor	Heritage	UnTreated	3	2	Rhizoplane	60.5	0.62
+Victor-UnT-RP-4-21	Victor	Heritage	UnTreated	4	21	Rhizoplane	60.5	1.35
+ASpeltoides-T-RS-2-5	ASpeltoides	Grass	Treated	2	5	Rhizosphere	75	1.95
+ASpeltoides-T-RS-3-25	ASpeltoides	Grass	Treated	3	25	Rhizosphere	69	3.48
+ASpeltoides-UnT-RS-1-18	ASpeltoides	Grass	UnTreated	1	18	Rhizosphere	100	0.54
+ASpeltoides-UnT-RS-2-1	ASpeltoides	Grass	UnTreated	2	1	Rhizosphere	92	0.34
+ASpeltoides-UnT-RS-3-6	ASpeltoides	Grass	UnTreated	3	6	Rhizosphere	89	0.48
+ATauschii-T-RS-1-21	ATauschii	Grass	Treated	1	21	Rhizosphere	47.5	1.96
+ATauschii-T-RS-2-40	ATauschii	Grass	Treated	2	40	Rhizosphere	48	1.36
+ATauschii-T-RS-3-17	ATauschii	Grass	Treated	3	17	Rhizosphere	49.5	3.05
+ATauschii-T-RS-4-37	ATauschii	Grass	Treated	4	37	Rhizosphere	37	0.99
+ATauschii-UnT-RS-1-27	ATauschii	Grass	UnTreated	1	27	Rhizosphere	41	0.27
+ATauschii-UnT-RS-2-2	ATauschii	Grass	UnTreated	2	2	Rhizosphere	46.5	0.38
+ATauschii-UnT-RS-3-14	ATauschii	Grass	UnTreated	3	14	Rhizosphere	28	0.42
+ATauschii-UnT-RS-4-30	ATauschii	Grass	UnTreated	4	30	Rhizosphere	42.5	0.34
+Avalon-T-RS-1-9	Avalon	Heritage	Treated	1	9	Rhizosphere	22.5	1.9
+Avalon-T-RS-2-17	Avalon	Heritage	Treated	2	17	Rhizosphere	37.5	2.06
+Avalon-T-RS-3-36	Avalon	Heritage	Treated	3	36	Rhizosphere	32	0.98
+Avalon-T-RS-4-40	Avalon	Heritage	Treated	4	40	Rhizosphere	1.98	1.98
+Avalon-UnT-RS-1-6	Avalon	Heritage	UnTreated	1	6	Rhizosphere	31	0.89
+Avalon-UnT-RS-2-36	Avalon	Heritage	UnTreated	2	36	Rhizosphere	39.5	0.63
+Avalon-UnT-RS-3-39	Avalon	Heritage	UnTreated	3	39	Rhizosphere	36	0.55
+Avalon-UnT-RS-4-34	Avalon	Heritage	UnTreated	4	34	Rhizosphere	38.5	
+Bulk-soil-T-RS-1-28	Bulk_soil	Negative control	Treated	1	28	Rhizosphere	NA	NA
+Bulk-soil-T-RS-2-33	Bulk_soil	Negative control	Treated	2	33	Rhizosphere	NA	NA
+Bulk-soil-T-RS-3-40	Bulk_soil	Negative control	Treated	3	40	Rhizosphere	NA	NA
+Bulk-soil-T-RS-4-3	Bulk_soil	Negative control	Treated	4	3	Rhizosphere	NA	NA
+Bulk-soil-UnT-RS-1-15	Bulk_soil	Negative control	UnTreated	1	15	Rhizosphere	NA	NA
+Bulk-soil-UnT-RS-2-4	Bulk_soil	Negative control	UnTreated	2	4	Rhizosphere	NA	NA
+Bulk-soil-UnT-RS-3-35	Bulk_soil	Negative control	UnTreated	3	35	Rhizosphere	NA	NA
+Bulk-soil-UnT-RS-4-33	Bulk_soil	Negative control	UnTreated	4	33	Rhizosphere	NA	NA
+Cadenza-T-RS-1-2	Cadenza	Heritage	Treated	1	2	Rhizosphere	42	1.07
+Cadenza-T-RS-2-6	Cadenza	Heritage	Treated	2	6	Rhizosphere	51.5	1.28
+Cadenza-T-RS-3-7	Cadenza	Heritage	Treated	3	7	Rhizosphere	59	0.85
+Cadenza-T-RS-4-11	Cadenza	Heritage	Treated	4	11	Rhizosphere	49.5	0.98
+Cadenza-UnT-RS-1-24	Cadenza	Heritage	UnTreated	1	24	Rhizosphere	54	0.174
+Cadenza-UnT-RS-2-20	Cadenza	Heritage	UnTreated	2	20	Rhizosphere	40.5	0.33
+Cadenza-UnT-RS-3-27	Cadenza	Heritage	UnTreated	3	27	Rhizosphere	50	0.38
+Cadenza-UnT-RS-4-15	Cadenza	Heritage	UnTreated	4	15	Rhizosphere	44	0.37
+Chidham-T-RS-1-36	Chidham	Heritage	Treated	1	36	Rhizosphere	54	2.74
+Chidham-T-RS-2-38	Chidham	Heritage	Treated	2	38	Rhizosphere	75	2.87
+Chidham-T-RS-3-22	Chidham	Heritage	Treated	3	22	Rhizosphere	80	3.19
+Chidham-T-RS-4-22	Chidham	Heritage	Treated	4	22	Rhizosphere	60.5	3.12
+Chidham-UnT-RS-1-22	Chidham	Heritage	UnTreated	1	22	Rhizosphere	49.5	0.53
+Chidham-UnT-RS-2-22	Chidham	Heritage	UnTreated	2	22	Rhizosphere	67.5	0.58
+Chidham-UnT-RS-3-33	Chidham	Heritage	UnTreated	3	33	Rhizosphere	50	1.25
+Crusoe-T-RS-1-1	Crusoe	Heritage	Treated	1	1	Rhizosphere	40.5	2.15
+Crusoe-T-RS-2-12	Crusoe	Heritage	Treated	2	12	Rhizosphere	47	3.18
+Crusoe-T-RS-3-30	Crusoe	Heritage	Treated	3	30	Rhizosphere	43	2.12
+Crusoe-T-RS-4-16	Crusoe	Heritage	Treated	4	16	Rhizosphere	15.5	3.56
+Crusoe-UnT-RS-1-20	Crusoe	Heritage	UnTreated	1	20	Rhizosphere	34	0.46
+Crusoe-UnT-RS-2-29	Crusoe	Heritage	UnTreated	2	29	Rhizosphere	40	0.75
+Crusoe-UnT-RS-3-15	Crusoe	Heritage	UnTreated	3	15	Rhizosphere	35.5	0.91
+Crusoe-UnT-RS-4-24	Crusoe	Heritage	UnTreated	4	24	Rhizosphere	45.5	0.57
+Gallant-T-RS-1-17	Gallant	Heritage	Treated	1	17	Rhizosphere	40	2.92
+Gallant-T-RS-2-23	Gallant	Heritage	Treated	2	23	Rhizosphere	43	1.98
+Gallant-T-RS-3-1	Gallant	Heritage	Treated	3	1	Rhizosphere	39.5	
+Gallant-T-RS-4-23	Gallant	Heritage	Treated	4	23	Rhizosphere	43	1.26
+Gallant-UnT-RS-1-38	Gallant	Heritage	UnTreated	1	38	Rhizosphere	37.5	0.44
+Gallant-UnT-RS-2-7	Gallant	Heritage	UnTreated	2	7	Rhizosphere	43.5	0.43
+Gallant-UnT-RS-3-18	Gallant	Heritage	UnTreated	3	18	Rhizosphere	39	0.39
+Gallant-UnT-RS-4-17	Gallant	Heritage	UnTreated	4	17	Rhizosphere	42	0.46
+Hereward-T-RS-1-5	Hereward	Heritage	Treated	1	5	Rhizosphere	37	2.54
+Hereward-T-RS-2-32	Hereward	Heritage	Treated	2	32	Rhizosphere	53	3.03
+Hereward-T-RS-3-9	Hereward	Heritage	Treated	3	9	Rhizosphere	39	3.18
+Hereward-T-RS-4-32	Hereward	Heritage	Treated	4	32	Rhizosphere	62	1.27
+Hereward-UnT-RS-1-7	Hereward	Heritage	UnTreated	1	7	Rhizosphere	39.5	0.5
+Hereward-UnT-RS-2-30	Hereward	Heritage	UnTreated	2	30	Rhizosphere	42.5	0.53
+Hereward-UnT-RS-3-19	Hereward	Heritage	UnTreated	3	19	Rhizosphere	40	0.56
+Malacca-T-RS-1-12	Malacca	Heritage	Treated	1	12	Rhizosphere	35.5	2.06
+Malacca-T-RS-2-3	Malacca	Heritage	Treated	2	3	Rhizosphere	26	0.56
+Malacca-T-RS-3-37	Malacca	Heritage	Treated	3	37	Rhizosphere	43	1.4
+Malacca-T-RS-4-26	Malacca	Heritage	Treated	4	26	Rhizosphere	35.5	2.37
+Malacca-UnT-RS-1-29	Malacca	Heritage	UnTreated	1	29	Rhizosphere	38	0.57
+Malacca-UnT-RS-2-24	Malacca	Heritage	UnTreated	2	24	Rhizosphere	44.5	0.51
+Malacca-UnT-RS-3-32	Malacca	Heritage	UnTreated	3	32	Rhizosphere	38	0.48
+RL-T-RS-1-35	Red Llammas	Heritage	Treated	1	35	Rhizosphere	60	2.64
+RL-T-RS-2-21	Red Llammas	Heritage	Treated	2	21	Rhizosphere	70	2.4
+RL-T-RS-3-24	Red Llammas	Heritage	Treated	3	24	Rhizosphere	67	3.18
+RL-T-RS-4-19	Red Llammas	Heritage	Treated	4	19	Rhizosphere	71.5	2.9
+RL-UnT-RS-1-40	Red Llammas	Heritage	UnTreated	1	40	Rhizosphere	44	0.65
+RL-UnT-RS-2-35	Red Llammas	Heritage	UnTreated	2	35	Rhizosphere	67	1.18
+RL-UnT-RS-3-12	Red Llammas	Heritage	UnTreated	3	12	Rhizosphere	69	0.77
+RL-UnT-RS-4-6	Red Llammas	Heritage	UnTreated	4	6	Rhizosphere	56.5	0.5
+T-carthilicum-T-RS-1-8	Triticum_carthilicum	Ancestral	Treated	1	8	Rhizosphere	53	0.39
+T-carthilicum-T-RS-2-19	Triticum_carthilicum	Ancestral	Treated	2	19	Rhizosphere	45	0.85
+T-carthilicum-T-RS-3-11	Triticum_carthilicum	Ancestral	Treated	3	11	Rhizosphere	58	1.4
+T-carthilicum-T-RS-4-9	Triticum_carthilicum	Ancestral	Treated	4	9	Rhizosphere	54.2	0.87
+T-carthilicum-UnT-RS-1-37	Triticum_carthilicum	Ancestral	UnTreated	1	37	Rhizosphere	50	0.36
+T-carthilicum-UnT-RS-2-16	Triticum_carthilicum	Ancestral	UnTreated	2	16	Rhizosphere	53.5	0.3
+T-carthilicum-UnT-RS-3-16	Triticum_carthilicum	Ancestral	UnTreated	3	16	Rhizosphere	52.5	0.44
+T-carthilicum-UnT-RS-4-25	Triticum_carthilicum	Ancestral	UnTreated	4	25	Rhizosphere	53	0.57
+T-dicoccoides-T-RS-1-14	Triticum_dicoccoides	Ancestral	Treated	1	14	Rhizosphere	77.8	0.175
+T-dicoccoides-T-RS-2-34	Triticum_dicoccoides	Ancestral	Treated	2	34	Rhizosphere	69.5	1.33
+T-dicoccoides-T-RS-3-8	Triticum_dicoccoides	Ancestral	Treated	3	8	Rhizosphere	65.5	1.25
+T-dicoccoides-T-RS-4-29	Triticum_dicoccoides	Ancestral	Treated	4	29	Rhizosphere	58.5	1.11
+T-dicoccoides-UnT-RS-1-26	Triticum_dicoccoides	Ancestral	UnTreated	1	26	Rhizosphere	68	0.47
+T-dicoccoides-UnT-RS-2-15	Triticum_dicoccoides	Ancestral	UnTreated	2	15	Rhizosphere	69.8	0.47
+T-dicoccoides-UnT-RS-3-4	Triticum_dicoccoides	Ancestral	UnTreated	3	4	Rhizosphere	66.5	0.54
+T-dicoccoides-UnT-RS-4-2	Triticum_dicoccoides	Ancestral	UnTreated	4	2	Rhizosphere	59.5	
+T-macha-T-RS-1-39	Triticum_macha	Ancestral	Treated	1	39	Rhizosphere	72	3.04
+T-macha-T-RS-2-14	Triticum_macha	Ancestral	Treated	2	14	Rhizosphere	77	1.15
+T-macha-T-RS-3-34	Triticum_macha	Ancestral	Treated	3	34	Rhizosphere	55.5	1.69
+T-macha-T-RS-4-18	Triticum_macha	Ancestral	Treated	4	18	Rhizosphere	70.5	2.03
+T-macha-UnT-RS-1-19	Triticum_macha	Ancestral	UnTreated	1	19	Rhizosphere	55	0.49
+T-macha-UnT-RS-2-11	Triticum_macha	Ancestral	UnTreated	2	11	Rhizosphere	66	0.53
+T-macha-UnT-RS-3-29	Triticum_macha	Ancestral	UnTreated	3	29	Rhizosphere	79	0.73
+T-macha-UnT-RS-4-14	Triticum_macha	Ancestral	UnTreated	4	14	Rhizosphere	72	0.59
+T-monococcum-T-RS-1-10	Triticum_monococcum	Ancestral	Treated	1	10	Rhizosphere	83	1.11
+T-monococcum-T-RS-2-37	Triticum_monococcum	Ancestral	Treated	2	37	Rhizosphere	35	0.3
+T-monococcum-T-RS-3-13	Triticum_monococcum	Ancestral	Treated	3	13	Rhizosphere	89.5	1.09
+T-monococcum-T-RS-4-7	Triticum_monococcum	Ancestral	Treated	4	7	Rhizosphere	70	0.47
+T-monococcum-UnT-RS-1-23	Triticum_monococcum	Ancestral	UnTreated	1	23	Rhizosphere	24.5	0.54
+T-monococcum-UnT-RS-2-25	Triticum_monococcum	Ancestral	UnTreated	2	25	Rhizosphere	48	0.33
+T-monococcum-UnT-RS-3-23	Triticum_monococcum	Ancestral	UnTreated	3	23	Rhizosphere	75.5	0.52
+T-monococcum-UnT-RS-4-28	Triticum_monococcum	Ancestral	UnTreated	4	28	Rhizosphere	73	0.3
+T-polonicum-T-RS-1-11	Triticum_polonicum	Ancestral	Treated	1	11	Rhizosphere	90	2.37
+T-polonicum-T-RS-2-26	Triticum_polonicum	Ancestral	Treated	2	26	Rhizosphere	96	3.8
+T-polonicum-T-RS-3-20	Triticum_polonicum	Ancestral	Treated	3	20	Rhizosphere	90	2.98
+T-polonicum-T-RS-4-5	Triticum_polonicum	Ancestral	Treated	4	5	Rhizosphere	97	3.48
+T-polonicum-UnT-RS-1-30	Triticum_polonicum	Ancestral	UnTreated	1	30	Rhizosphere	82	0.63
+T-polonicum-UnT-RS-2-13	Triticum_polonicum	Ancestral	UnTreated	2	13	Rhizosphere	78.5	0.58
+T-polonicum-UnT-RS-3-3	Triticum_polonicum	Ancestral	UnTreated	3	3	Rhizosphere	84	0.72
+T-polonicum-UnT-RS-4-12	Triticum_polonicum	Ancestral	UnTreated	4	12	Rhizosphere	78	0.49
+T-spelta-T-RS-1-4	Triticum_spelta	Ancestral	Treated	1	4	Rhizosphere	79	1.49
+T-spelta-T-RS-2-39	Triticum_spelta	Ancestral	Treated	2	39	Rhizosphere	80	1.75
+T-spelta-T-RS-3-28	Triticum_spelta	Ancestral	Treated	3	28	Rhizosphere	74.5	1.39
+T-spelta-T-RS-4-36	Triticum_spelta	Ancestral	Treated	4	36	Rhizosphere	73	1.29
+T-spelta-UnT-RS-1-32	Triticum_spelta	Ancestral	UnTreated	1	32	Rhizosphere	67	0.51
+T-spelta-UnT-RS-2-27	Triticum_spelta	Ancestral	UnTreated	2	27	Rhizosphere	68.5	0.63
+T-spelta-UnT-RS-3-38	Triticum_spelta	Ancestral	UnTreated	3	38	Rhizosphere	69	0.98
+T-spelta-UnT-RS-4-10	Triticum_spelta	Ancestral	UnTreated	4	10	Rhizosphere	59.6	0.52
+T-uranicum-T-RS-1-31	Triticum_uranicum	Ancestral	Treated	1	31	Rhizosphere	85.2	2.14
+T-uranicum-T-RS-2-31	Triticum_uranicum	Ancestral	Treated	2	31	Rhizosphere	94	1.87
+T-uranicum-T-RS-3-10	Triticum_uranicum	Ancestral	Treated	3	10	Rhizosphere	97	1.08
+T-uranicum-T-RS-4-13	Triticum_uranicum	Ancestral	Treated	4	13	Rhizosphere	93	1.93
+T-uranicum-UnT-RS-1-3	Triticum_uranicum	Ancestral	UnTreated	1	3	Rhizosphere	59	0.59
+T-uranicum-UnT-RS-2-28	Triticum_uranicum	Ancestral	UnTreated	2	28	Rhizosphere	67	0.54
+T-uranicum-UnT-RS-3-21	Triticum_uranicum	Ancestral	UnTreated	3	21	Rhizosphere	76	0.54
+T-uranicum-UnT-RS-4-27	Triticum_uranicum	Ancestral	UnTreated	4	27	Rhizosphere	70	0.6
+T-uratu-T-RS-2-8	Triticum_uratu	Ancestral	Treated	2	8	Rhizosphere	33	1.14
+T-uratu-T-RS-3-26	Triticum_uratu	Ancestral	Treated	3	26	Rhizosphere	40	1.4
+T-uratu-T-RS-4-35	Triticum_uratu	Ancestral	Treated	4	35	Rhizosphere	30	1.02
+T-uratu-UnT-RS-1-25	Triticum_uratu	Ancestral	UnTreated	1	25	Rhizosphere	34.5	0.69
+T-uratu-UnT-RS-2-10	Triticum_uratu	Ancestral	UnTreated	2	10	Rhizosphere	49.5	0.39
+T-uratu-UnT-RS-3-31	Triticum_uratu	Ancestral	UnTreated	3	31	Rhizosphere	43.5	0.39
+T-uratu-UnT-RS-4-38	Triticum_uratu	Ancestral	UnTreated	4	38	Rhizosphere	55.5	
+Victor-T-RS-1-13	Victor	Heritage	Treated	1	13	Rhizosphere	56.5	2.58
+Victor-T-RS-2-18	Victor	Heritage	Treated	2	18	Rhizosphere	55	2.12
+Victor-T-RS-3-5	Victor	Heritage	Treated	3	5	Rhizosphere	53	3.82
+Victor-T-RS-4-8	Victor	Heritage	Treated	4	8	Rhizosphere	43	3.08
+Victor-UnT-RS-1-34	Victor	Heritage	UnTreated	1	34	Rhizosphere	49.5	0.58
+Victor-UnT-RS-2-9	Victor	Heritage	UnTreated	2	9	Rhizosphere	74	1.36
+Victor-UnT-RS-3-2	Victor	Heritage	UnTreated	3	2	Rhizosphere	60.5	0.62
+Victor-UnT-RS-4-21	Victor	Heritage	UnTreated	4	21	Rhizosphere	60.5	1.35
+Blank-1	Blank							
+Blank-2	Blank							
+Mock-Community-1	Mock_Community							
+Mock-Community-2	Mock_Community							
