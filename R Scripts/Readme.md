@@ -4,7 +4,7 @@ This repository contains R scripts used for the analysis and figure preparation 
 
 ## Contents
 
-- `Phyloseq.R`: Script describing the creation and filtering of phyloseq objects. Requires the filter_by_presence function from [drimaria] (https://github.com/drimaria) 
+- `Phyloseq.R`: Script describing the creation and filtering of phyloseq objects. Requires the `filter_by_presence` function from [drimaria](https://github.com/drimaria). 
 - Scripts for producing Figures:
 - `Figure1.R`
 - `Figure2.R`
