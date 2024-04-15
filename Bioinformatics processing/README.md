@@ -161,11 +161,6 @@ biom convert \
 ```
 
 
-
-
-
-######################################################################################
-
 # 2. Processing of culture-dependent (CD) 16S rRNA gene dataset from raw data
 ### In Qiime2
 ### Import fastq files in Qiime2
