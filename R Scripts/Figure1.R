@@ -150,10 +150,10 @@ div.df$Phylogenetic_Diversity <- df.pd$PD
 
 
 #Organise data for plotting
-div.df.1 <- div.df[, c("Soil", "Fertilization", "Block", "chao1", "diversity_shannon", "evenness_simpson", "Phylogenetic_Diversity")]
+div.df.1 <- div.df[, c("Soil", "Fertilization", "Block", "observed.x", "diversity_shannon", "evenness_simpson", "Phylogenetic_Diversity")]
 writexl::write_xlsx(div.df.1, "Figure1/Data/alpha_diversity.xlsx")
 
-colnames(div.df.1) <- c("Soil","Fertilization", "Block", "Chao1", "Shannon index", "Simpson index", "Faith's PD")
+colnames(div.df.1) <- c("Soil","Fertilization", "Block", "Observed", "Shannon index", "Simpson index", "Faith's PD")
 
 div.df.melt <- reshape2::melt(div.df.1)
 #Using Soil, Fertilization, Block as id variables
@@ -359,18 +359,18 @@ sigtab.rp = cbind(as(sigtab.rp, "data.frame"), as(tax_table(physeq.da.rp)[rownam
 #Organise data for plotting
 sigtab.bs$ASV <- "Not significant"
 sigtab.bs$ASV[sigtab.bs$log2FoldChange > 0 & sigtab.bs$padj < 0.0001] <- "Fertilized"
-sigtab.bs$ASV[sigtab.bs$log2FoldChange < 0 & sigtab.bs$padj < 0.0001] <- "Non-Fertilized"
-sigtab.bs$ASV = factor(sigtab.bs$ASV, levels = c("Non-Fertilized", "Not significant" ,"Fertilized"))
+sigtab.bs$ASV[sigtab.bs$log2FoldChange < 0 & sigtab.bs$padj < 0.0001] <- "Non-fertilized"
+sigtab.bs$ASV = factor(sigtab.bs$ASV, levels = c("Non-fertilized", "Not significant" ,"Fertilized"))
 
 sigtab.rs$ASV <- "Not significant"
 sigtab.rs$ASV[sigtab.rs$log2FoldChange > 0 & sigtab.rs$padj < 0.0001] <- "Fertilized"
-sigtab.rs$ASV[sigtab.rs$log2FoldChange < 0 & sigtab.rs$pvalue < 0.0001] <- "Non-Fertilized"
-sigtab.rs$ASV = factor(sigtab.rs$ASV, levels = c("Non-Fertilized", "Not significant" ,"Fertilized"))
+sigtab.rs$ASV[sigtab.rs$log2FoldChange < 0 & sigtab.rs$pvalue < 0.0001] <- "Non-fertilized"
+sigtab.rs$ASV = factor(sigtab.rs$ASV, levels = c("Non-fertilized", "Not significant" ,"Fertilized"))
 
 sigtab.rp$ASV <- "Not significant"
 sigtab.rp$ASV[sigtab.rp$log2FoldChange > 0 & sigtab.rp$pvalue < 0.0001] <- "Fertilized"
-sigtab.rp$ASV[sigtab.rp$log2FoldChange < 0 & sigtab.rp$pvalue < 0.0001] <- "Non-Fertilized"
-sigtab.rp$ASV = factor(sigtab.rp$ASV, levels = c("Non-Fertilized", "Not significant" ,"Fertilized"))
+sigtab.rp$ASV[sigtab.rp$log2FoldChange < 0 & sigtab.rp$pvalue < 0.0001] <- "Non-fertilized"
+sigtab.rp$ASV = factor(sigtab.rp$ASV, levels = c("Non-fertilized", "Not significant" ,"Fertilized"))
 
 
 #Relative abundance of ASVs
@@ -398,13 +398,15 @@ plot.theme <- theme (
   axis.text.x=element_text(size=10) 
 ) 
 
+y.axis.title <- my_y_title <- expression(paste("-log10(", italic("P"), " value)"))
+
 
 volcano.bs <- ggplot(data=sigtab.bs,
                      aes(x=log2FoldChange, y=-log10(pvalue), col=ASV, size = Abundance)) +
   geom_point() + 
   plot.theme +
   scale_color_manual(values=c("black", navy)) +
-  labs(title="Unplanted", x="", y="-log10(pvalue)") +
+  labs(title="Unplanted", x="", y=y.axis.title) +
   ylim(0, 100) +
   xlim(-10, 10) +
   theme(plot.title = element_text(hjust = 0.5, size=12),
@@ -438,7 +440,8 @@ volcano.rp <- ggplot(data=sigtab.rp,
   xlim(-10, 11) +
   theme(axis.text.y = element_blank(),
         plot.title = element_text(hjust = 0.5, size=12)) +
-  scale_size(range=c(0.5,6),breaks=c(0.5, 1.5 ,3.0, 6.0) ,labels=c("0.5","1.5","3.0","6.0"),guide="legend")
+  scale_size(range=c(0.5,6),breaks=c(0.5, 1.5 ,3.0, 6.0) ,labels=c("0.5","1.5","3.0","6.0"),guide="legend") +
+  labs(colour="ASV", size="Abundance (%)")
 volcano.rp
 
 
