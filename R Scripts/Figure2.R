@@ -31,8 +31,8 @@ theme_set(theme_bw())
 
 #Directories:
 dir.create("Figure2")
-dir.create("Data")
-dir.create("Plots")
+dir.create("Figure2/Data")
+dir.create("Figure2/Plots")
 
 suppressMessages(library(phyloseq)); packageVersion("phyloseq") #v1.42.0
 
