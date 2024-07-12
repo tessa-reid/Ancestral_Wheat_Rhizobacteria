@@ -1,7 +1,7 @@
 #tern_e function from: https://github.com/BulgarelliD-Lab/Microbiota_mapping/blob/main/QRMC-3HS_Fig1_SFig3/tern_e.R
 #tern_e_modifed: modified for aesthetics including point shape and axis labels.
 
-tern_e_modified <- function (x, scale = 1, dimnames = NULL, dimnames_position = c("corner", "edge", "none"), dimnames_color = "black", id = NULL, id_color = "black", coordinates = FALSE, grid = TRUE, grid_color = "gray", labels = c("inside", "outside", "none"), labels_color = "darkgray", border = "black", bg = "white", pch = 19, cex = 1, prop_size = FALSE, shape = 19, col = "red", newpage = TRUE, pop = TRUE, ...) {
+tern_e_modified <- function (x, scale = 1, dimnames = NULL, dimnames_position = c("corner", "edge", "none"), dimnames_color = "black", id = NULL, id_color = "black", coordinates = FALSE, grid = TRUE, grid_color = "gray", labels = c("inside", "outside", "none"), labels_color = "black", border = "black", bg = "white", pch = 19, cex = 1, prop_size = FALSE, shape = 19, col = "red", newpage = TRUE, pop = TRUE, ...) {
   labels <- match.arg(labels)
   if (grid == TRUE)
     grid <- "dotted"
