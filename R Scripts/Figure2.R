@@ -238,15 +238,15 @@ div.df.rp$Phylogenetic_Diversity <- df.pd.rp$PD
 
 
 #### Organise data for plotting
-div.df.rs.1 <- div.df.rs[, c("Soil", "Fertilization", "Ploidy", "Block", "chao1", "diversity_shannon", "evenness_simpson", "Phylogenetic_Diversity")]
+div.df.rs.1 <- div.df.rs[, c("Soil", "Fertilization", "Ploidy", "Block", "observed.x", "diversity_shannon", "evenness_simpson", "Phylogenetic_Diversity")]
 writexl::write_xlsx(div.df.rs.1, "Figure2/Data/alpha_diversity_rhizosphere.xlsx")
 
-div.df.rp.1 <- div.df.rp[, c("Soil", "Fertilization", "Ploidy", "Block", "chao1", "diversity_shannon", "evenness_simpson", "Phylogenetic_Diversity")]
+div.df.rp.1 <- div.df.rp[, c("Soil", "Fertilization", "Ploidy", "Block", "observed.x", "diversity_shannon", "evenness_simpson", "Phylogenetic_Diversity")]
 writexl::write_xlsx(div.df.rp.1, "Figure2/Data/alpha_diversity_rhizoplane.xlsx")
 
 
-colnames(div.df.rs.1) <- c("Soil", "Fertilization", "Ploidy", "Block", "Chao1", "Shannon index", "Simpson index", "Faith's PD")
-colnames(div.df.rp.1) <- c("Soil", "Fertilization", "Ploidy","Block", "Chao1", "Shannon index", "Simpson index", "Faith's PD")
+colnames(div.df.rs.1) <- c("Soil", "Fertilization", "Ploidy", "Block", "Observed", "Shannon index", "Simpson index", "Faith's PD")
+colnames(div.df.rp.1) <- c("Soil", "Fertilization", "Ploidy","Block", "Observed", "Shannon index", "Simpson index", "Faith's PD")
 
 
 div.df.melt.rs <- reshape2::melt(div.df.rs.1)
@@ -258,7 +258,7 @@ div.df.melt.rp <- reshape2::melt(div.df.rp.1)
 alpha.rs <- ggboxplot(div.df.melt.rs, x = "Ploidy", y = "value",
                    fill = "Fertilization",
                    legend = "none") + 
-  labs(title="Rhizosphere",x="Ploidy", y = "")+
+  labs(title="Rhizosphere",x="Ploidy", y = "Alpha diversity value")+
   colour.fill.fer  +
   facet_wrap(~variable, nrow=1, ncol=4, scales = "free") +
   theme(panel.background = element_rect(colour = "black"),
@@ -274,21 +274,17 @@ alpha.rp <- ggboxplot(div.df.melt.rp, x = "Ploidy", y = "value",
   colour.fill.fer  +
   facet_wrap(~variable, nrow=1, ncol=4, scales = "free") +
   theme (panel.background = element_rect(colour = "black"),
-         legend.position="none",
+         legend.position="right",
          axis.text.x=element_text(size=10, angle = 90, vjust = 0.5, hjust=1))
 alpha.rp
 
-
-figure.2A <- ggarrange(alpha.rs, alpha.rp, nrow=1)
-figure.2A
-figure.2A <- annotate_figure(figure.2A,
-                            left = "Alpha diversity value")
+figure.2A <- ggarrange(alpha.rs, alpha.rp, nrow = 1, ncol = 2, widths = c(1, 1.25))
 figure.2A
 
 # Save as pdf
 pdf(file = "Figure2/Plots/alpha_diversity_plots_soil.pdf",   #file name
-    width = 12, # The width of the plot in inches
-    height = 4) # The height of the plot in inches
+    width = 15, # The width of the plot in inches
+    height = 4.5) # The height of the plot in inches
 figure.2A
 dev.off()
 #RStudioGD 
@@ -587,8 +583,8 @@ cap.plot.rs <- plot_ordination(
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
     legend.position="right") +
-  geom_hline(yintercept = 0, linewidth=0.1) + geom_vline(xintercept = 0, size=0.1) +
-  labs(title="Rhizosphere bacterial community")
+  geom_hline(yintercept = 0, linewidth=0.1) + geom_vline(xintercept = 0, linewidth=0.1) +
+  labs(title="Rhizosphere bacterial community", x="CAP1 (19.1%)", y="CAP2 (3.1%)")
 cap.plot.rs
 
 
@@ -604,8 +600,8 @@ cap.plot.rp <- plot_ordination(
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
     legend.position="right") +
-  geom_hline(yintercept = 0, size=0.1) + geom_vline(xintercept = 0, size=0.1) +
-  labs(title="Rhizoplane bacterial community")
+  geom_hline(yintercept = 0, linewidth=0.1) + geom_vline(xintercept = 0, linewidth=0.1) +
+  labs(title="Rhizoplane bacterial community", x="CAP1 (24.3%)", y="CAP2 (2.4%)")
 cap.plot.rp
 
 
@@ -651,8 +647,8 @@ figure.2C
 
 # Save as pdf
 pdf(file = "Figure2/Plots/cap_plots_soil.pdf",   #file name
-    width = 10, # The width of the plot in inches
-    height = 4) # The height of the plot in inches
+    width = 8, # The width of the plot in inches
+    height = 3) # The height of the plot in inches
 figure.2C
 dev.off()
 #RStudioGD 
